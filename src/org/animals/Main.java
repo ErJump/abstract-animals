@@ -15,9 +15,17 @@ public class Main {
 		p.verso();
 		
 		System.out.println("-------------");
+		
 		Aquila a = new Aquila("Reale");
 		a.dormi();
 		a.mangia();
 		a.verso();
+		
+		System.out.println("-------------");
+		
+		Delfino d = new Delfino("Flipper");
+		d.dormi();
+		d.mangia();
+		d.verso();
 	}
 }
