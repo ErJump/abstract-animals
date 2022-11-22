@@ -14,5 +14,10 @@ public class Main {
 		p.mangia();
 		p.verso();
 		
+		System.out.println("-------------");
+		Aquila a = new Aquila("Reale");
+		a.dormi();
+		a.mangia();
+		a.verso();
 	}
 }
