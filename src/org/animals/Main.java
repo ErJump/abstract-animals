@@ -27,5 +27,19 @@ public class Main {
 		d.dormi();
 		d.mangia();
 		d.verso();
+		
+		System.out.println("-------------");
+		
+		faiVolare(a);
+		faiVolare(p);
+		faiNuotare(d);
+	}
+	
+	public static void faiVolare(IVolante animale) {
+		animale.vola();
+	}
+	
+	public static void faiNuotare(INuotante animale) {
+		animale.nuota();
 	}
 }

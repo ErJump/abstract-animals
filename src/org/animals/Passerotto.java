@@ -1,6 +1,6 @@
 package org.animals;
 
-public class Passerotto extends Animale{
+public class Passerotto extends Animale implements IVolante {
 
 	public Passerotto(String nome) {
 		super(nome);
@@ -14,6 +14,11 @@ public class Passerotto extends Animale{
 	@Override
 	public void mangia() {
 		System.out.println("frutta, semi, insetti");
+	}
+
+	@Override
+	public void vola() {
+		System.out.println("vola!");
 	}
 	
 }
