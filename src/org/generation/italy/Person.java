@@ -9,6 +9,8 @@ public abstract class Person {
 	private LocalDate dateOfBirth;
 	private String companyCode;
 	
+	public abstract int getYearIncome();
+
 	public Person(String name, String surname, LocalDate dateOfBirth) {
 		setName(name);
 		setSurname(surname);
@@ -52,13 +54,11 @@ public abstract class Person {
 	}
 	
 	public String getFullName() {
-		return getName() + " " + getSurname();
+		return getName() + " " + getSurname() + " (" + getCompanyCode() + ")";
 	}
-	
-	public abstract int getYearIncome();
-	
+		
 	@Override
 	public String toString() {
-		return getFullName() + " - " + getCompanyCode() + " - " + getDateOfBirth();
+		return getFullName() + " - " + getDateOfBirth();
 	}
 }
